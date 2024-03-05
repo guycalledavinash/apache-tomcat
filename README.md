@@ -1,5 +1,7 @@
 Apache tomcat is java based and is a web server container for web applications
 
+Let me show how its installed and deploy a simple html application
+
 ## Server Setup in VM
 ec2 instance: t2.micro
 
@@ -56,6 +58,30 @@ It should look like this:
 ![4](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/280bcfb7-1d3c-4dd6-b979-0aebed5ab5fe)
 
 2. Add users and configure the username, password
-From conf directory, edit 'tomcat-users.xml` file by pasting [this](https://github.com/guycalledavinash/apache-tomcat/blob/main/configure-users) script under
 
+From conf directory, edit 'tomcat-users.xml` file by pasting [this](https://github.com/guycalledavinash/apache-tomcat/blob/main/configure-users) script just above `</tomcat-users>` at the bottom
+
+This is how it is by default:
 ![4](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/39aff453-400b-41cb-a8f8-03cc617852cf)
+
+Modify this:
+![5](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/f4e5349f-9009-4da4-92d2-950935c91893)
+
+3. Restart it by going to `bin`
+```
+sh startup.sh
+sh shutdown.sh
+```
+Server should be up, showcasing all the folders
+![s1](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/b3260431-5e8e-471a-8a1a-b0eadb758163)
+
+We can upload/deploy artifacts using GUI here
+![s2](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/0a4c31e8-a643-4542-b691-4f0b08612103)
+
+Checkout these two repositories to see how to package, deploy artifacts: [Maven](https://github.com/guycalledavinash/maven), [Nexus](https://github.com/guycalledavinash/nexus-repository)  
+
+I deployed a war file
+![s3](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/a7ebb8bc-122e-402f-a158-addc9f7de0a5)
+
+Upon opening the file
+![s4](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/188fc6fe-750c-4b75-ac07-dc1d70cd0c74)
