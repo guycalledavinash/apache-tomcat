@@ -54,3 +54,8 @@ allow=".*"
 ```
 It should look like this:
 ![4](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/280bcfb7-1d3c-4dd6-b979-0aebed5ab5fe)
+
+2. Add users and configure the username, password
+From conf directory, edit 'tomcat-users.xml` file by pasting [this](https://github.com/guycalledavinash/apache-tomcat/blob/main/configure-users) script under
+
+![4](https://github.com/guycalledavinash/apache-tomcat/assets/90386560/39aff453-400b-41cb-a8f8-03cc617852cf)
