@@ -1,6 +1,6 @@
 Apache tomcat is java based and is a web server container for web applications
 
-Let me show how its installed and deploy a simple html application
+Let's take a look at how it's installed and deploy a simple html application
 
 ## Server Setup in VM
 ec2 instance: t2.micro
