@@ -1,6 +1,8 @@
+<!--
+  This deployment example does not require Tomcat Manager credentials.
+  Keep user definitions out of version control and create them locally only
+  when a separate Manager-based workflow is required.
+-->
 <role rolename="manager-gui" />
 <role rolename="manager-script" />
 <role rolename="admin-gui" />
-
-<user username="tomcat" password="tomcat" roles="manager-gui" />
-<user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
